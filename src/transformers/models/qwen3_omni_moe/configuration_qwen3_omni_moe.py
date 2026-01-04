@@ -718,6 +718,7 @@ class Qwen3OmniMoeTalkerTextConfig(PreTrainedConfig):
         vocab_size: Optional[int] = 3072,
         hidden_size: Optional[int] = 1024,
         intermediate_size: Optional[int] = 2048,
+        shared_expert_intermediate_size: Optional[int] = 2048,
         num_hidden_layers: Optional[int] = 20,
         num_attention_heads: Optional[int] = 16,
         num_key_value_heads: Optional[int] = 2,
@@ -745,6 +746,7 @@ class Qwen3OmniMoeTalkerTextConfig(PreTrainedConfig):
         self.max_position_embeddings = max_position_embeddings
         self.hidden_size = hidden_size
         self.intermediate_size = intermediate_size
+        self.shared_expert_intermediate_size = shared_expert_intermediate_size
         self.num_hidden_layers = num_hidden_layers
         self.num_attention_heads = num_attention_heads
         self.sliding_window = sliding_window
