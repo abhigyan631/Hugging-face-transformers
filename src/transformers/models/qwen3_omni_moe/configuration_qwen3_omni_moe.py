@@ -662,6 +662,8 @@ class Qwen3OmniMoeTalkerTextConfig(PreTrainedConfig):
             The frequency of the MoE layer.
         moe_intermediate_size (`int`, *optional*, defaults to 768):
             Intermediate size of the routed expert.
+        shared_expert_intermediate_size (`int`, *optional*, defaults to 2048):
+            Intermediate size of the shared expert.
         num_experts_per_tok (`int`, *optional*, defaults to 8):
             Number of selected experts.
         num_experts (`int`, *optional*, defaults to 128):
